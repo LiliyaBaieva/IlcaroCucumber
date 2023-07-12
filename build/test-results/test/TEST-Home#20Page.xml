@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Home Page" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-11T10:44:57" hostname="LAPTOP-LILIIA" time="1.609">
+  <properties/>
+  <testcase name="Verify Home Page title is displayed" classname="Home Page" time="1.609"/>
+  <system-out><![CDATA[
+@navigate
+Scenario: Verify Home Page title is displayed ?[90m# src/test/resources/features/navigate.feature:4?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                 ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.launch_Browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m           ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.open_Il_Carro_Home_Page()?[0m
+  ?[32mThen ?[0m?[32mUser verifies Home Page title?[0m          ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.verify_Home_Page_Title()?[0m
+  ?[32mAnd ?[0m?[32mUser quit browser?[0m                       ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.User_quit_browser()?[0m
+]]></system-out>
+  <system-err><![CDATA[лип. 11, 2023 1:44:57 ПП org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+]]></system-err>
+</testsuite>

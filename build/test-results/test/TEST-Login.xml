@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-07-11T10:44:43" hostname="LAPTOP-LILIIA" time="14.007">
+  <properties/>
+  <testcase name="Login with valid email and wrong password #1" classname="Login" time="4.929"/>
+  <testcase name="Login with valid email and wrong password #2" classname="Login" time="3.12"/>
+  <testcase name="Login with valid email and wrong password #3" classname="Login" time="2.948"/>
+  <testcase name="Login with valid email and wrong password #4" classname="Login" time="3.01"/>
+  <system-out><![CDATA[
+@WrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:26?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.launch_Browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.open_Il_Carro_Home_Page()?[0m
+  ?[32mAnd ?[0m?[32mUser click on Log in link?[0m                             ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Log_in_link()?[0m
+  ?[32mAnd ?[0m?[32mUsers enters valid email and wrong password?[0m           ?[90m# com.ilCarro.stepDefenitions.LoginSteps.enter_valid_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email             | password  |
+    | lisawan@gmail.com | $Lisawan$ |
+  ?[32mAnd ?[0m?[32mUser click on Yalla button?[0m                            ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Yalla_button()?[0m
+  ?[32mThen ?[0m?[32mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefenitions.LoginSteps.verifies_error()?[0m
+  ?[32mAnd ?[0m?[32mUser quit browser?[0m                                     ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.User_quit_browser()?[0m
+
+@WrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:27?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.launch_Browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.open_Il_Carro_Home_Page()?[0m
+  ?[32mAnd ?[0m?[32mUser click on Log in link?[0m                             ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Log_in_link()?[0m
+  ?[32mAnd ?[0m?[32mUsers enters valid email and wrong password?[0m           ?[90m# com.ilCarro.stepDefenitions.LoginSteps.enter_valid_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email             | password  |
+    | lisawan@gmail.com | lisawan87 |
+  ?[32mAnd ?[0m?[32mUser click on Yalla button?[0m                            ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Yalla_button()?[0m
+  ?[32mThen ?[0m?[32mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefenitions.LoginSteps.verifies_error()?[0m
+  ?[32mAnd ?[0m?[32mUser quit browser?[0m                                     ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.User_quit_browser()?[0m
+
+@WrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:28?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.launch_Browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.open_Il_Carro_Home_Page()?[0m
+  ?[32mAnd ?[0m?[32mUser click on Log in link?[0m                             ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Log_in_link()?[0m
+  ?[32mAnd ?[0m?[32mUsers enters valid email and wrong password?[0m           ?[90m# com.ilCarro.stepDefenitions.LoginSteps.enter_valid_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email             | password |
+    | lisawan@gmail.com | $Ln87$   |
+  ?[32mAnd ?[0m?[32mUser click on Yalla button?[0m                            ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Yalla_button()?[0m
+  ?[32mThen ?[0m?[32mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefenitions.LoginSteps.verifies_error()?[0m
+  ?[32mAnd ?[0m?[32mUser quit browser?[0m                                     ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.User_quit_browser()?[0m
+
+@WrongPassword
+Scenario Outline: Login with valid email and wrong password ?[90m# src/test/resources/features/login.feature:29?[0m
+  ?[32mGiven ?[0m?[32mUser launches browser?[0m                               ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.launch_Browser()?[0m
+  ?[32mWhen ?[0m?[32mUser opens ilCarro Home Page?[0m                         ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.open_Il_Carro_Home_Page()?[0m
+  ?[32mAnd ?[0m?[32mUser click on Log in link?[0m                             ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Log_in_link()?[0m
+  ?[32mAnd ?[0m?[32mUsers enters valid email and wrong password?[0m           ?[90m# com.ilCarro.stepDefenitions.LoginSteps.enter_valid_email_and_wrong_password(io.cucumber.datatable.DataTable)?[0m
+    | email             | password    |
+    | lisawan@gmail.com | @lisawan88@ |
+  ?[32mAnd ?[0m?[32mUser click on Yalla button?[0m                            ?[90m# com.ilCarro.stepDefenitions.LoginSteps.click_on_Yalla_button()?[0m
+  ?[32mThen ?[0m?[32mUser verifies error?[0m                                  ?[90m# com.ilCarro.stepDefenitions.LoginSteps.verifies_error()?[0m
+  ?[32mAnd ?[0m?[32mUser quit browser?[0m                                     ?[90m# com.ilCarro.stepDefenitions.HomePageSteps.User_quit_browser()?[0m
+]]></system-out>
+  <system-err><![CDATA[лип. 11, 2023 1:44:43 ПП org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+лип. 11, 2023 1:44:47 ПП org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+лип. 11, 2023 1:44:48 ПП org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+лип. 11, 2023 1:44:51 ПП org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+лип. 11, 2023 1:44:54 ПП org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
+]]></system-err>
+</testsuite>
